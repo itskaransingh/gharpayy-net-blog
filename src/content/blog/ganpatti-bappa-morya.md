@@ -1,5 +1,4 @@
 ---
-layout: $/layouts/post.astro
 title: "ganpatti bappa morya "
 excerpt: bappa morya re bappa morya re
 publishDate: 2023-02-03T12:12:49.050Z
