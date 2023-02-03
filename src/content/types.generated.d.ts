@@ -71,6 +71,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
+"ganpatti-bappa-morya.md": {
+  id: "ganpatti-bappa-morya.md",
+  slug: "ganpatti-bappa-morya",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+},
 "how-to-become-frontend-master.md": {
   id: "how-to-become-frontend-master.md",
   slug: "how-to-become-frontend-master",
@@ -85,9 +92,16 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
-"template.md": {
-  id: "template.md",
-  slug: "template",
+"pg-in-koramangala.md": {
+  id: "pg-in-koramangala.md",
+  slug: "pg-in-koramangala",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+},
+"test.md": {
+  id: "test.md",
+  slug: "test",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">

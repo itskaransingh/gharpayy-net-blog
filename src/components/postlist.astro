@@ -2,19 +2,11 @@
 import cx from "classnames";
 
 import { Image, Picture } from "@astrojs/image/components";
-// import Label from "@components/ui/label.astro";
-// import type { Author } from "@data/authors";
-// import { authors } from "@data/authors";
-// import type { Category } from "@data/category";
-// import { categories } from "@data/category";
 import { getFormattedDate } from "@utils/all";
 import { Icon } from "astro-icon";
 
 const { post, aspect, preloadImage } = Astro.props;
-// const author = authors.find((item) => item.slug === post.data.author) as Author;
-// const category = categories.find(
-//   (item) => item.slug === post.data.category
-// ) as Category;
+
 ---
 
 <div class="cursor-pointer group">
@@ -54,7 +46,7 @@ const { post, aspect, preloadImage } = Astro.props;
     class="mt-2 text-lg font-semibold tracking-normal text-brand-primary dark:text-white">
     <a href={"/blog/" + post.slug}>
       <span
-        class="bg-gradient-to-r from-green-200 to-green-100 dark:from-purple-800 dark:to-purple-900 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
+        class="bg-gradient-to-r from-[#F4C024] to-[#F4C024] dark:from-purple-800 dark:to-purple-900 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
         {post.data.title}
       </span>
     </a>

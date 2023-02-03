@@ -12,14 +12,15 @@ export interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+console.log(canonicalURL)
 
 const { title, desc, ogimage = "/opengraph.jpg" } = Astro.props;
 
 const resolvedOGImage = checkImageUrl(ogimage, Astro.site);
 
 const makeTitle = title
-  ? title + " | " + "Stablo"
-  : "Stablo — Free Blog Website Template built with Astro & MDX";
+  ? title + " | " + "GharPayy"
+  : "GharPayy — Blogs";
 ---
 
 <!DOCTYPE html>
@@ -32,7 +33,7 @@ const makeTitle = title
     <SEO
       title={makeTitle}
       description={desc ||
-        "Stablo is a Blog Starter Template built with Astro & MDX."}
+        "GharrPayy - We provide PG's"}
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -43,18 +44,18 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Stablo - Blog Starter Template for Astro`,
+          title: `GharrPayy - We provide PG's`,
           image: resolvedOGImage,
         },
         image: {
-          alt: "Stablo Screenshot",
+          alt: "GharPayy Logo",
         },
       }}
     />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
   </head>
-  <body>
+  <body class="">
     <Navbar />
     <slot />
     <Footer />
