@@ -1,16 +1,16 @@
 ---
 import { Image, Picture } from "@astrojs/image/components";
-import Authorcard from "@components/authorcard.astro";
+// import Authorcard from "@components/authorcard.astro";
 import Container from "@components/container.astro";
-import Label from "@components/ui/label.astro";
-import { authors } from "@data/authors";
-import { categories } from "@data/category";
+// import Label from "@components/ui/label.astro";
+// import { authors } from "@data/authors";
+// import { categories } from "@data/category";
 import Layout from "@layouts/Layout.astro";
 import { getFormattedDate } from "@utils/all";
 import { CollectionEntry, getCollection } from "astro:content";
 
-import type { Author } from "@data/authors";
-import type { Category } from "@data/category";
+// import type { Author } from "@data/authors";
+// import type { Category } from "@data/category";
 
 type Props = CollectionEntry<"blog">;
 
@@ -26,10 +26,10 @@ const { post } = Astro.props;
 
 const { Content, injectedFrontmatter } = await post.render();
 
-const author = authors.find((item) => item.slug === post.data.author) as Author;
-const category = categories.find(
-  (item) => item.slug === post.data.category
-) as Category;
+// const author = authors.find((item) => item.slug === post.data.author) as Author;
+// const category = categories.find(
+//   (item) => item.slug === post.data.category
+// ) as Category;
 ---
 
 <Layout
@@ -38,9 +38,9 @@ const category = categories.find(
   ogimage={post.data.image}>
   <Container>
     <div class="max-w-screen-md mx-auto">
-      <div class="text-center">
+      <!-- <div class="text-center">
         <Label theme={category.color}>{category.title}</Label>
-      </div>
+      </div> -->
 
       <h1
         class="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
@@ -49,7 +49,7 @@ const category = categories.find(
 
       <div class="flex justify-center mt-3 space-x-3 text-gray-500">
         <div class="flex items-center gap-3">
-          <div class="relative flex-shrink-0 w-10 h-10">
+          <!-- <div class="relative flex-shrink-0 w-10 h-10">
             {
               author.image && (
                 <Image
@@ -62,12 +62,12 @@ const category = categories.find(
                 />
               )
             }
-          </div>
+          </div> -->
 
           <div>
-            <p class="text-gray-800 dark:text-gray-400">
+            <!-- <p class="text-gray-800 dark:text-gray-400">
               {author.name}
-            </p>
+            </p> -->
             <div class="flex items-center space-x-2 text-sm">
               <time
                 class="text-gray-500 dark:text-gray-400"
@@ -125,7 +125,7 @@ const category = categories.find(
           ← View all posts
         </a>
       </div>
-      {author && <Authorcard author={author} />}
+      <!-- {author && <Authorcard author={author} />} -->
     </article>
   </Container>
 </Layout>
