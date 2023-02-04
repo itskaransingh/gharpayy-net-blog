@@ -3,12 +3,14 @@ import { Image } from "@astrojs/image/components";
 import Container from "@components/container.astro";
 import logoImage from "@assets/gharpayy_logo2.png";
 import Themeswitch from "./themebtn.astro";
+
+
 ---
 
 <Container>
   <nav>
     <div class="flex  justify-between md:gap-10 md:flex-nowrap">
-      <a href="../"  class="hover:opacity-70 md:cursor-pointer">
+      <a  href='/' id="back"   class="hover:opacity-70 md:cursor-pointer">
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -35,3 +37,11 @@ import Themeswitch from "./themebtn.astro";
   </nav>
 
 </Container>
+
+<!-- 
+<script>
+  const backbtn = document.getElementById('back')
+backbtn?.addEventListener('click',()=>{
+  window.history.back()
+})
+</script> -->
