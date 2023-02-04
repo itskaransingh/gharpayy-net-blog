@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gharpayy.netlify.app/sitemap-index.xml
+Sitemap: https://gharpayyblog.netlify.app/sitemap-index.xml
