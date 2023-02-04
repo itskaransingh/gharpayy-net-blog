@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gharpayy.netlify.app/sitemap-index.xml
