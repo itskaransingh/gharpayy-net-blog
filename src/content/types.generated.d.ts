@@ -43,72 +43,23 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"blog": {
-"14-architectural-design-ideas-for-spacious-interior.md": {
-  id: "14-architectural-design-ideas-for-spacious-interior.md",
-  slug: "14-architectural-design-ideas-for-spacious-interior",
+"coliving-vs-renting-pros-cons-and-the-difference-between-them.md": {
+  id: "coliving-vs-renting-pros-cons-and-the-difference-between-them.md",
+  slug: "coliving-vs-renting-pros-cons-and-the-difference-between-them",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
-"complete-guide-fullstack-development.md": {
-  id: "complete-guide-fullstack-development.md",
-  slug: "complete-guide-fullstack-development",
+"paying-guest-hostels-or-co-living-which-option-is-best-for-students.md": {
+  id: "paying-guest-hostels-or-co-living-which-option-is-best-for-students.md",
+  slug: "paying-guest-hostels-or-co-living-which-option-is-best-for-students",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
-"essential-data-structures-algorithms.md": {
-  id: "essential-data-structures-algorithms.md",
-  slug: "essential-data-structures-algorithms",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
-"every-next-level-of-your-life-will-demand-a-different-you.md": {
-  id: "every-next-level-of-your-life-will-demand-a-different-you.md",
-  slug: "every-next-level-of-your-life-will-demand-a-different-you",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
-"ganpatti-bappa-morya.md": {
-  id: "ganpatti-bappa-morya.md",
-  slug: "ganpatti-bappa-morya",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
-"how-to-become-frontend-master.md": {
-  id: "how-to-become-frontend-master.md",
-  slug: "how-to-become-frontend-master",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
-"nothing-new-about-undermining-women-autonomy.md": {
-  id: "nothing-new-about-undermining-women-autonomy.md",
-  slug: "nothing-new-about-undermining-women-autonomy",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
-"pg-in-koramangala.md": {
-  id: "pg-in-koramangala.md",
-  slug: "pg-in-koramangala",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
-"test.md": {
-  id: "test.md",
-  slug: "test",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
-"this-bread-pudding-will-give-you-all-the-fall-feels.md": {
-  id: "this-bread-pudding-will-give-you-all-the-fall-feels.md",
-  slug: "this-bread-pudding-will-give-you-all-the-fall-feels",
+"why-is-coliving-more-in-demand-after-the-covid-pandemic.md": {
+  id: "why-is-coliving-more-in-demand-after-the-covid-pandemic.md",
+  slug: "why-is-coliving-more-in-demand-after-the-covid-pandemic",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
