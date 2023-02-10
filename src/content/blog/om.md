@@ -6,6 +6,7 @@ image: https://media.istockphoto.com/id/1453086792/photo/ganesha-made-of-stone-i
 tags:
   - yes
 ---
+## MDX
 import Banner from "@components/ui/banner.astro";
 
 h﻿i this is a banner
