@@ -3,8 +3,10 @@ import { Image, Picture } from "@astrojs/image/components";
 // import Authorcard from "@components/authorcard.astro";
 import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
+import WhyWe from "@components/ui/whywe.astro";
 import { getFormattedDate } from "@utils/all";
 import { CollectionEntry, getCollection } from "astro:content";
+
 
 type Props = CollectionEntry<"blog">;
 
@@ -15,6 +17,7 @@ export async function getStaticPaths() {
     props: { post },
   }));
 }
+
 
 const { post } = Astro.props;
 
@@ -102,7 +105,7 @@ const { Content, injectedFrontmatter } = await post.render();
       <div
         class="mx-auto my-3 prose prose-base dark:prose-invert prose-a:text-blue-600">
         <Content />
-
+        <WhyWe/>
         <div class="flex flex-wrap items-center w-full gap-3 md:w-auto">
           {
             post.data.tags.map((tag) => (

@@ -1,6 +1,7 @@
 ---
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar.astro";
+import TopBanner from "@components/ui/topbanner.astro";
 import "@fontsource/inter/variable.css";
 import { checkImageUrl } from "@utils/all";
 import { SEO } from "astro-seo";
@@ -55,6 +56,7 @@ const makeTitle = title
     ></script>
   </head>
   <body class="">
+    <TopBanner/>
     <Navbar />
     <slot />
     <Footer />

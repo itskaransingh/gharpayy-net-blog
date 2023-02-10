@@ -1,0 +1,70 @@
+---
+import Button from "./button.astro";
+
+interface Props {
+  class?: string;
+  btntext?: string;
+  btnlink?: string;
+  [x: string]: any;
+}
+
+const {
+  btntext = "WatsApp Now",
+  class: className,
+  btnlink = "#",
+  ...rest
+} = Astro.props;
+
+const qualt = [
+  {
+    sr: 1,
+    title: "Affordable",
+    desc: "Only one month deposit",
+  },
+  {
+    sr: 2,
+    title: "Healthy Meals",
+    desc: "No need to take extra hassle about food.",
+  },
+  {
+    sr: 3,
+    title: "Housekeeping",
+    desc: "Super Cleanliness, Right hygiene",
+  },
+];
+---
+
+<div
+  {...rest}
+  class:list={[
+    "rounded text-center gap-5 md:p-10 px-3 py-3 mb-5 w-full  transition  justify-around flex-col  flex items-center focus-visible:ring-2 ring-offset-2 ring-gray-200",
+    className,
+  ]}
+>
+  <div class="flex flex-col box-border gap-2">
+    <div class="text-2xl font-bold text-[#4484ea]">Why Choose Us</div>
+    <div>ACROSS THE STREET FROM THE ORDINARY</div>
+  </div>
+  <div class="flex gap-10 flex-col">
+    {
+      qualt.map(({ sr, desc, title }) => (
+        <div class="flex box-border gap-7">
+          <div class="bg-[#F4C024] text-xl font-semibold h-12 w-12 flex justify-center items-center rounded-t-full  rounded-bl-full text-black">
+            {sr}
+          </div>
+          <div class="flex items-start box-border  flex-col">
+            <div class="text-xl font-semibold  text-[#4484ea]">{title}</div>
+            <div class="break-words text-left">{desc}</div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  <!-- <a
+    href={btnlink}
+    class="bg-[#F4C024] flex no-underline justify-center items-center font-semibold md:p-2.5 px-1 py-1 rounded-lg w-40 text-black"
+  >
+    {btntext}
+  </a> -->
+  <Button btnlink={btnlink} btntext={btntext}/>
+</div>

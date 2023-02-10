@@ -1,0 +1,41 @@
+---
+import Button from './button.astro';
+
+interface Props {
+  class?: string;
+  text?: string;
+  btntext?:string;
+  btnlink?:string;
+  [x: string]: any;
+}
+
+
+const {
+  btntext='WatsApp Now',
+  class: className,
+  btnlink='#',
+  text = "Looking for BEST PG ? GET HOTEL LIKE PG.",
+  ...rest
+} = Astro.props;
+
+---
+
+<div
+  {...rest}
+  class:list={[
+    " text-center sticky top-0 z-10 gap-4  px-5 py-3 w-full bg-[#0943A0] transition  justify-between md:flex-row flex items-center focus-visible:ring-2 ring-offset-2 ring-gray-200",
+    className,
+  ]}
+>
+  <div class="md:text-xl text-lg flex-col flex font-bold break-words">
+   {text}
+  </div>
+  <!-- <a
+  href={btnlink}
+    class="bg-[#F4C024] flex no-underline justify-center items-center font-semibold md:p-2.5 px-1 py-1 rounded-lg w-40 text-black"
+  >
+    {btntext}
+  </a> -->
+  <Button btnlink={btnlink} btntext={btntext} topbanner/>
+
+</div>
