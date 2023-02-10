@@ -50,13 +50,6 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
-"kitchensink.mdx": {
-  id: "kitchensink.mdx",
-  slug: "kitchensink",
-  body: string,
-  collection: "blog",
-  data: InferEntrySchema<"blog">
-},
 "paying-guest-hostels-or-co-living-which-option-is-best-for-students.md": {
   id: "paying-guest-hostels-or-co-living-which-option-is-best-for-students.md",
   slug: "paying-guest-hostels-or-co-living-which-option-is-best-for-students",
