@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main # Branch to update (optional; defaults to master)
   repo: KaranSingh2666/gharpayy-net-blog
   base_url: https://gharpayyblog.vercel.app
