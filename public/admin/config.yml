@@ -2,7 +2,7 @@ backend:
   name: github
   branch: main # Branch to update (optional; defaults to master)
   repo: KaranSingh2666/gharpayy-net-blog
-  base_url: https://gharpayyblog.vercel.app
+  base_url: https://netlify-cms-oauth.onrender.com
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
