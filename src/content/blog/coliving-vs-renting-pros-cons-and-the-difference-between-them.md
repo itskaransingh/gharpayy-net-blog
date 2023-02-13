@@ -1,12 +1,12 @@
 ---
-title: Coliving vs. renting - Pros, cons, and the difference between them
+title: Coliving vs. renting - Pros, cons, and difference between them
 excerpt: Paying guest (PG) accommodations are a popular option for students and
   young professionals in Bangalore. These facilities offer a convenient and
   cost-effective alternative to renting a flat. In this blog, we'll explore the
   advantages and disadvantages of living in a PG and why students should
   consider this option when looking for a place to stay in the city.
 publishDate: 2023-02-05T12:27:11.698Z
-image: '/images/uploads/covsrent.jpeg'
+image: /images/uploads/covsrent.jpeg
 tags:
   - PG accommodations
   - Bangalore
